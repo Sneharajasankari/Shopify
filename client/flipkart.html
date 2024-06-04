@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="" IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify</title>
+  <link rel="stylesheet" href="flip.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="c:\samyukthaas work\sneha flipkart project images\shof s.png" alt="">
+      <p>Shopify <span>Plus</span></p>
+    </div>
+    <input type="text" placeholder="Search Product & More">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <ul style="margin-right: 10px;flex-grow: 1;margin-bottom: 20px;">
+      <li style="display: inline-block;margin-right: 10px;">
+        <a href="file:///C:/Users/user/Downloads/flipkart%20project/myaccount.html">My Account</a>
+
+        <a>Became a Seller</a>
+        <a>More</a>
+        <a href="file:///C:/Users/user/Downloads/flipkart%20project/cart.html">Add to cart</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <ul>
+    <li>
+      <a>Top Offers</a>
+      <a href="topoffers.html">Grocery</a>
+      <a>Womens</a>
+      <a>Mens</a>
+      <a>Electronics</a>
+      <a>Fashion</a>
+      <a>Home</a>
+      <a>Beauty</a>
+      <a>Appliances</a>
+    </li>
+  </ul>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img class="_2OHU_q aA9eLq" alt="."
+        srcset="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/4f163c7c76979a7d.png?q=50 2x, https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/4f163c7c76979a7d.png?q=50 1x"
+        src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/4f163c7c76979a7d.png?q=50"
+        data-tkid="M_6468e236-b4b5-4e7e-adb5-7f67a31b7704_2.TDJ3HOB9M201">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="_2OHU_q aA9eLq" alt="s"
+        srcset="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/96742a45280b19a1.jpg?q=50 2x, https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/96742a45280b19a1.jpg?q=50 1x"
+        src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/96742a45280b19a1.jpg?q=50"
+        data-tkid="M_12e42e10-d5e4-4a96-8737-65b0f535e2c9_2.NP7E34IEP9QW">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="_2OHU_q aA9eLq" alt="intel"
+        srcset="https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/efb2c55fb1e3c45d.jpeg?q=50 2x, https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/efb2c55fb1e3c45d.jpeg?q=50 1x"
+        src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/efb2c55fb1e3c45d.jpeg?q=50"
+        data-tkid="A_6468e236-b4b5-4e7e-adb5-7f67a31b7704_2.UO0OK7WLSKQ8">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1176cec8a9974c97.jpg?q=50" alt="">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+
+  <div class="container">
+
+    <div class="card">
+      <img
+        src="https://rukminim1.flixcart.com/image/312/312/xif0q/t-shirt/e/r/9/xl-st-smartees-pocket-black-smartees-original-imagh8ctwfczgdcx.jpeg?q=70"
+        alt="">
+      <p>Printed round neck</p>
+      <p>$ 05.00 only</p>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="https://rukminim1.flixcart.com/image/312/312/l4rd0280/t-shirt/c/y/x/m-408a-austiz-original-imagfh43wzj6hvyv.jpeg?q=70"
+        alt="">
+      <p>Printed round neck T-shirt</p>
+      <p>$ 05.00 only</p>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://rukminim1.flixcart.com/image/312/312/l4rd0280/t-shirt/l/n/s/s-402a-austiz-original-imagfh4fmsjbsy69.jpeg?q=70"
+        alt="">
+      <p>Printed round neck </p>
+      <p>$ 05.00 only</p>
+    </div>
+
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>
